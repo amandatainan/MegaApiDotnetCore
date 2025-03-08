@@ -27,10 +27,11 @@
 </h1>
 
 <p align="center">
-  Mega Man Robots API is a .NET Core backend service designed to provide JSON-formatted data
-  on the bosses and robots from the Mega Man series. Built with .NET Core 3.1 and modern development
-  technologies, this API enables efficient data management and serves as an essential resource for
-  accessing Mega Man robot data.
+  Mega Man Robots API is a .NET Core-based backend service designed to provide JSON-formatted data on the bosses and robots from the Mega Man video game series.
+</p>
+
+<p align="center">
+  Built with .NET Core 3.1, Entity Framework Core, and other modern web development technologies, this API offers a seamless way to interact with Mega Man robot data in a RESTful manner.
 </p>
 
 <p align="center">
@@ -39,10 +40,28 @@
 
 ---
 
+## 🚀 Features
+
+- **List of all Robots**: Retrieve all robot data from the Mega Man universe.
+- **Robot Details**: Get detailed information about a specific robot, including name, abilities, and more.
+- **Create Robot**: Add new robots to the database (post request).
+
+---
+
 ## 🛠️ API Endpoints
+
+### Available Routes
 
 | Method | Endpoint               | Description                           |
 |--------|------------------------|---------------------------------------|
-| `GET`  | `/api/v1/robots`        | Returns a list of all robots          |
-| `GET`  | `/api/v1/robots/{id}`   | Retrieves details of a specific robot by ID |
-| `POST` | `/api
+| `GET`  | `/api/v1/robots`        | Returns a list of all robots.         |
+| `GET`  | `/api/v1/robots/{id}`   | Retrieves details of a specific robot by ID. |
+| `POST` | `/api/v1/robots`        | Creates a new robot entry.            |
+
+### Example Request
+
+#### 1. Get all robots
+
+**Request:**
+```http
+GET /api/v1/robots
